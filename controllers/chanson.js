@@ -79,7 +79,7 @@ exports.create = [bodyIdValidationRule(), chansonValidationRules(), checkValidit
             _id: req.body.id,
             name: req.body.name,
             featuring: req.body.featuring,
-            album_id: new ObjectId(req.body.album_id),
+            album_id: req.body.album_id,
         });
 
         // Ajout de chanson dans la bdd 

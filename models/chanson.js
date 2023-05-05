@@ -8,7 +8,7 @@ const chansonSchema = new mongoose.Schema({
     _id: { type: Number, required: true },
     name: { type: String, required: true },
     featuring: { type: String, required: false },
-    album_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Album' }
+    album_id: { type: Number, required: true }
 });
 
 // (Étape 3) Création d'une nouvelle propriété virtuelle "id" qui aura la valeur de la propriété "_id"
